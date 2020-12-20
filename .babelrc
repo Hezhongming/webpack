@@ -1,0 +1,20 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                //按需加载
+                "useBuiltIns": "usage",
+                //指定兼容新做到哪个版本浏览器
+                "targets":{
+                    "chrome": "40"
+                },
+                //默认为corejs为2,要装corejs@2,使用corejs3要指定为3
+                "corejs": {
+                    "version": 3
+                }
+            }
+        ]
+
+    ]
+}
